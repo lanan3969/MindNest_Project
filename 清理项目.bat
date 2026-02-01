@@ -28,62 +28,54 @@ echo.
 
 REM 删除Unity缓存
 if exist "03_MR_Experience\MindNest_MR\Library\" (
-    echo [1/7] 删除 Unity Library...
+    echo [1/6] 删除 Unity Library...
     rmdir /s /q "03_MR_Experience\MindNest_MR\Library"
     echo ✓ Unity Library 已删除
 ) else (
-    echo [1/7] Unity Library 不存在，跳过
+    echo [1/6] Unity Library 不存在，跳过
 )
 
 if exist "03_MR_Experience\MindNest_MR\Temp\" (
-    echo [2/7] 删除 Unity Temp...
+    echo [2/6] 删除 Unity Temp...
     rmdir /s /q "03_MR_Experience\MindNest_MR\Temp"
     echo ✓ Unity Temp 已删除
 ) else (
-    echo [2/7] Unity Temp 不存在，跳过
+    echo [2/6] Unity Temp 不存在，跳过
 )
 
 if exist "03_MR_Experience\MindNest_MR\Logs\" (
-    echo [3/7] 删除 Unity Logs...
+    echo [3/6] 删除 Unity Logs...
     rmdir /s /q "03_MR_Experience\MindNest_MR\Logs"
     echo ✓ Unity Logs 已删除
 ) else (
-    echo [3/7] Unity Logs 不存在，跳过
+    echo [3/6] Unity Logs 不存在，跳过
 )
 
 if exist "03_MR_Experience\MindNest_MR\obj\" (
-    echo [4/7] 删除 Unity obj...
+    echo [4/6] 删除 Unity obj...
     rmdir /s /q "03_MR_Experience\MindNest_MR\obj"
     echo ✓ Unity obj 已删除
 ) else (
-    echo [4/7] Unity obj 不存在，跳过
+    echo [4/6] Unity obj 不存在，跳过
 )
 
-REM 删除Node modules
-if exist "02_Mobile_App\node_modules\" (
-    echo [5/7] 删除 Node modules...
-    rmdir /s /q "02_Mobile_App\node_modules"
-    echo ✓ Node modules 已删除
-) else (
-    echo [5/7] Node modules 不存在，跳过
-)
 
 REM 删除Python缓存
 if exist "01_Backend_AI\__pycache__\" (
-    echo [6/7] 删除 Python 缓存...
+    echo [5/6] 删除 Python 缓存...
     rmdir /s /q "01_Backend_AI\__pycache__"
     echo ✓ Python 缓存已删除
 ) else (
-    echo [6/7] Python 缓存不存在，跳过
+    echo [5/6] Python 缓存不存在，跳过
 )
 
 REM 删除备份文件夹
 if exist "01_Backend_AI\assets\nomi\backup\" (
-    echo [7/7] 删除备份图片...
+    echo [6/6] 删除备份图片...
     rmdir /s /q "01_Backend_AI\assets\nomi\backup"
     echo ✓ 备份图片已删除
 ) else (
-    echo [7/7] 备份图片不存在，跳过
+    echo [6/6] 备份图片不存在，跳过
 )
 
 echo.
